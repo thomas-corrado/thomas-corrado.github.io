@@ -1,40 +1,36 @@
-import { ChakraProvider, extendTheme } from "@chakra-ui/react"; 
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import HeaderBackground from "../components/HeaderBackground";
-import HeaderName from "../components/HeaderName";
-import "reset-css"; 
-import "@fontsource/source-serif-4";
+import "reset-css";
 
 const theme = extendTheme({
   colors: {
-    black: "#000000", 
+    black: "#000000",
     white: "#FFFFFF",
-    peach: "#efd9c5", 
-    blue: "#002051"
-  }, 
+    peach: "#efd9c5",
+    blue: "#002051",
+  },
   components: {
     Button: {
       variants: {
         link: {
           ":focus": {
-            outline: "none", 
-            boxShadow: "none"
-          }
-        }
-      }
-    }
+            outline: "none",
+            boxShadow: "none",
+          },
+        },
+      },
+    },
   },
   fonts: {
-    heading: `'Source Serif 4', serif`,
-  }
-})
+    heading: `serif`,
+  },
+});
 
 const MyApp = ({ Component, pageProps }) => {
   return (
     <ChakraProvider theme={theme}>
-      <HeaderBackground>
-        <Component {...pageProps} />
-        <HeaderName/>
-      </HeaderBackground>
+      <HeaderBackground />
+      <Component {...pageProps} />
     </ChakraProvider>
   );
 };
