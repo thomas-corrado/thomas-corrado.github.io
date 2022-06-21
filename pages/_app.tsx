@@ -1,6 +1,8 @@
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import HeaderBackground from "../components/HeaderBackground";
 import "reset-css";
+import BlackTriangle from "../components/BlackTriangle";
+import OrangeContainer from "../components/OrangeContainer";
 
 const theme = extendTheme({
   colors: {
@@ -23,6 +25,7 @@ const theme = extendTheme({
   },
   fonts: {
     heading: `serif`,
+    body: `"Franklin", "serif"`,
   },
 });
 
@@ -31,6 +34,8 @@ const MyApp = ({ Component, pageProps }) => {
     <ChakraProvider theme={theme}>
       <HeaderBackground />
       <Component {...pageProps} />
+      <BlackTriangle />
+      <OrangeContainer />
     </ChakraProvider>
   );
 };

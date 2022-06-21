@@ -1,4 +1,4 @@
-import { Box, Stack, Grid } from "@chakra-ui/layout";
+import { Box, Stack, Flex } from "@chakra-ui/layout";
 import NextLink from "next/link";
 import { Heading } from "@chakra-ui/react";
 import NextImage from "next/image";
@@ -35,23 +35,22 @@ const HeaderBackground = () => {
       <Heading top="calc(12vw)" left="14vw" position="absolute" fontSize="7vw">
         Corrado
       </Heading>
-      <Grid
+      <Flex
         position="absolute"
-        templateColumns="repeat(4, 1fr)"
-        gap={10}
-        w="30%"
-        right="25vw"
+        align="center"
+        justify="center"
+        right="6.5vw"
         top="10vw"
-        justifyContent="space-between"
+        gap="3vw"
       >
         {topMenu.map((menu) => (
-          <Heading fontSize="calc(3.5vw)">
+          <Heading fontSize="3.5vw">
             <NextLink href={menu.route} passHref>
               {menu.name}
             </NextLink>
           </Heading>
         ))}
-      </Grid>
+      </Flex>
     </Stack>
   );
 };
