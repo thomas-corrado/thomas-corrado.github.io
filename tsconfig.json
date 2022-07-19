@@ -24,7 +24,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "components/HeaderBackground.tsx", "components/Bubble.tsx"  ],
   "exclude": [
     "node_modules"
   ]

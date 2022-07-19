@@ -1,6 +1,5 @@
-import { Box, GridItem, Text } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import NextImage from "next/image";
-import NextLink from "next/link";
 
 const iconMenu = [
   {
