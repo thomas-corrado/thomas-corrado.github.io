@@ -15,12 +15,54 @@ const HeaderBackground = () => {
           alignContent: "center",
         }}
       >
-        <Bubble wh="13.5rem" top="13rem" left="-31rem"  emoji="🎥" fs="6rem" text="Films" />
-        <Bubble wh="11rem" top="24.5rem" left="-21rem" emoji="👤" fs="5rem" text="Contact"/>
-        <Bubble wh="17rem" top="11rem" left="-13rem" emoji="👨🏻‍🎓" fs="9.5rem" text="Experience"/>
-        <Bubble wh="15rem" top="24rem" left="0.25rem" emoji="📸" fs="6rem" text="Photos"/>
-        <Bubble wh="13rem" top="10rem" left="5.25rem" emoji="💻" fs="6rem" text="Code Portfolio"/>
-        <Bubble wh="16rem" top="19rem" left="16rem" emoji="🎶" fs="8rem" text="Music"/>
+        <Bubble
+          wh="13.5rem"
+          top="13rem"
+          left="-31rem"
+          emoji="🎥"
+          fs="6rem"
+          text="Films"
+        />
+        <Bubble
+          wh="11rem"
+          top="24.5rem"
+          left="-21rem"
+          emoji="👤"
+          fs="5rem"
+          text="Contact"
+        />
+        <Bubble
+          wh="17rem"
+          top="11rem"
+          left="-13rem"
+          emoji="👨🏻‍🎓"
+          fs="9.5rem"
+          text="Experience"
+        />
+        <Bubble
+          wh="15rem"
+          top="24rem"
+          left="0.25rem"
+          emoji="📸"
+          fs="6rem"
+          text="Photos"
+        />
+        <Bubble
+          wh="13rem"
+          top="10rem"
+          left="5.25rem"
+          emoji="💻"
+          fs="6rem"
+          text="Code Portfolio"
+        />
+        <Bubble
+          wh="16rem"
+          top="19rem"
+          left="16rem"
+          emoji="🎶"
+          fs="8rem"
+          text="Music"
+        />
       </Container>
 
       <Box sx={{ alignItems: "center", width: "100%" }}>
@@ -66,7 +108,7 @@ const HeaderBackground = () => {
         </Wave>
       </Box>
 
-      <Box width="100vw" top="calc(87vh - 3rem)" position="absolute" zIndex={5} >
+      <Box width="100vw" top="calc(87vh - 3rem)" position="absolute" zIndex={5}>
         <Wave
           fill="#039F5F"
           options={{ height: 40, amplitude: 50, speed: 0.3, points: 3 }}

@@ -1,16 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Tooltip } from "@chakra-ui/react";
-import { theme, styled} from "@washingtonpost/wpds-ui-kit";
+import { theme, styled } from "@washingtonpost/wpds-ui-kit";
 
 const StyledDiv = styled("div", {
-  fontFamily: theme.fonts.meta, 
-  length: "100%"
-})
+  fontFamily: theme.fonts.meta,
+  length: "100%",
+});
 
 const Bubble = ({ wh, top, left, emoji, fs, text }) => {
-  
-  
   return (
     <StyledDiv>
       <Tooltip
